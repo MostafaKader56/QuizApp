@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/addNewQuiz" android:title="@string/create_new_quiz" app:showAsAction="never"/>
+<!--    <item android:id="@+id/addNewQuiz1" android:title="@string/create_new_quiz" app:showAsAction="never"/>-->
+<!--    <item android:id="@+id/addNewQuiz2" android:title="@string/create_new_quiz" app:showAsAction="never"/>-->
+<!--    <item android:id="@+id/addNewQuiz3" android:title="@string/create_new_quiz" app:showAsAction="never"/>-->
+</menu>

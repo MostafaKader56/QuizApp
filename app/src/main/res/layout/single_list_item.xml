@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorDark"
+    app:cardCornerRadius="16dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/list_ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_image"
+            android:contentDescription="@string/imageContentDescription" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:translationZ="10dp"
+            android:background="@drawable/quiz_item_image_cover"
+            android:layout_alignEnd="@+id/list_ImageView"
+            android:layout_alignStart="@+id/list_ImageView"
+            android:layout_alignBottom="@+id/list_ImageView"/>
+
+        <TextView
+            android:id="@+id/list_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz_title"
+            android:fontFamily="@font/crimson_text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            android:ellipsize="end"
+            android:layout_below="@+id/list_ImageView"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/list_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz_description"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/list_Title"
+            android:layout_marginHorizontal="24dp"
+            android:ems="150"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/list_Difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/difficulty"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/list_Description"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/list_ViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/outline_btn_bg"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/view_quiz"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/work_sans"
+            android:padding="12dp"
+            android:layout_below="@+id/list_Difficulty"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

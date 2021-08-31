@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsFragment"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/details_ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_image"
+            android:contentDescription="@string/imageContentDescription" />
+
+        <TextView
+            android:id="@+id/details_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz_title"
+            android:fontFamily="@font/crimson_text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            android:layout_below="@+id/details_ImageView"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/details_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_Title"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/details_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz_description"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_writer"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/details_Difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/difficulty"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_Description"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/details_totalQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/total_questions"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_Difficulty"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/details_lastScore"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/last_score"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_totalQuestions"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/details_Difficulty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/na"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_Description"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/details_totalQuestions_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/na"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_Difficulty"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/details_lastScore_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/na"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            android:fontFamily="@font/work_sans"
+            android:layout_below="@+id/details_totalQuestions"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/list_ViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/outline_btn_bg"
+            android:text="@string/startQuiz"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/work_sans"
+            android:padding="12dp"
+            android:layout_below="@+id/details_lastScore"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4752389125269439/4871450789"
+            android:layout_below="@+id/list_ViewButton"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+</ScrollView>
